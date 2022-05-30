@@ -64,7 +64,7 @@ public class AddressbookController {
     public ResponseEntity<ResponseDTO> sortAddressBookByCity(){
         List<AddressbookData> addressbookDataList = null;
         addressbookDataList = addressbooService.sortAddressBookByCity();
-        ResponseDTO responseDTO = new ResponseDTO("sort AddressBook By City Success",addressbookDataList);
+        ResponseDTO responseDTO = new ResponseDTO("Sort AddressBook By City Success",addressbookDataList);
         return new ResponseEntity<>(responseDTO,HttpStatus.OK);
     }
 
@@ -80,7 +80,7 @@ public class AddressbookController {
     public ResponseEntity<ResponseDTO> sortAddressBookByState(){
         List<AddressbookData> addressbookDataList = null;
         addressbookDataList = addressbooService.sortAddressBookByState();
-        ResponseDTO responseDTO = new ResponseDTO("sort AddressBook By State Success",addressbookDataList);
+        ResponseDTO responseDTO = new ResponseDTO("Sort AddressBook By State Success",addressbookDataList);
         return new ResponseEntity<>(responseDTO,HttpStatus.OK);
     }
 
@@ -96,7 +96,7 @@ public class AddressbookController {
     public ResponseEntity<ResponseDTO> sortAddressBookByZip(){
         List<AddressbookData> addressbookDataList = null;
         addressbookDataList = addressbooService.sortAddressBookByZip();
-        ResponseDTO responseDTO = new ResponseDTO("sort AddressBook By Zip Success",addressbookDataList);
+        ResponseDTO responseDTO = new ResponseDTO("Sort AddressBook By Zip Success",addressbookDataList);
         return new ResponseEntity<>(responseDTO,HttpStatus.OK);
     }
 
@@ -112,7 +112,7 @@ public class AddressbookController {
     public ResponseEntity<ResponseDTO> sortAddressBookByName(){
         List<AddressbookData> addressbookDataList = null;
         addressbookDataList = addressbooService.sortAddressBookByName();
-        ResponseDTO responseDTO = new ResponseDTO("sort AddressBook By Name Success",addressbookDataList);
+        ResponseDTO responseDTO = new ResponseDTO("Sort AddressBook By Name Success",addressbookDataList);
         return new ResponseEntity<>(responseDTO,HttpStatus.OK);
     }
 }

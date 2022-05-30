@@ -36,6 +36,7 @@ body {
     color: #82a70c;
     text-transform: capitalize;
 }
+
 .addr-book {
     color: #42515f;
 }
@@ -45,16 +46,14 @@ body {
 }
 
 /* UC2 */
- .form-content{
+.form-content{
      padding-top: 50px;
      min-height: calc(100%-80px);
      background-color: #f7f7f7;
      display: flex;
      justify-content: center;
      align-items: center; 
- }
-
- 
+}
 
 .form{
     width: 65%;
@@ -63,10 +62,8 @@ body {
     border: 1px solid #f5f5f5;
     /* border: 1px solid black; */
     border-radius: 8px;
-   
     opacity: 1;
 }
-
 
 .form-head-content{
     display: flex;
@@ -216,7 +213,7 @@ error-output{
     background-color: #008CFF;
     color: black;
     transform: scale(1.2);
-  }
+}
 
 .resetButton{
     background: #E2E2E2 0% 0% no-repeat padding-box;
@@ -229,4 +226,4 @@ error-output{
     background-color: #969696;
     color: black;
     transform: scale(1.2);
-  }
+}

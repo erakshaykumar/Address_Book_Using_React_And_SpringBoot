@@ -1,6 +1,5 @@
 import axios from 'axios'
 
-
 class AddressbookService{
     baseUrl = 'http://localhost:8080/addressbook'
 
@@ -22,8 +21,6 @@ class AddressbookService{
     }
 
     updatePerson = (id,person) => {
-        // return axios.post(`${this.baseUrl}`+"/update/"+`${id}`,person);
-        // return axios.put(`${this.baseURL}` + `/update/${id}`, person);
         return axios.put(`${this.baseUrl}`+"/update/"+`${id}`,person)
     }
 }

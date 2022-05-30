@@ -9,7 +9,6 @@ import edit1 from "../components/assets/icons/edit.svg"
 export default function Home(props) {
   const [contacts, setContacts] = useState([]);
 
-  
   useEffect(() => {
     fetchContactsApi();
   });
@@ -79,8 +78,7 @@ export default function Home(props) {
         <table id="table-display" className="table">
           <thead>
             <tr>
-              <th>SlNo</th>
-              {/* <th>Unique id</th> */}
+              <th>SlNo</th>             
               <th>Full Name</th>
               <th>Address</th>
               <th>City</th>
@@ -97,7 +95,6 @@ export default function Home(props) {
               return(
                 <tr key={contact.personId}>
                   <td>{i+1}</td>
-                  {/* <td>{contact.personId}</td> */}
                   <td>{contact.fullName}</td>
                   <td>{contact.phone}</td>
                   <td>{contact.address}</td>
@@ -124,7 +121,6 @@ export default function Home(props) {
             })
           }
           </tbody>
-
         </table>
         </div>
       </div>

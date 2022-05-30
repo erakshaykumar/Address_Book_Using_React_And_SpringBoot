@@ -13,10 +13,6 @@ public class AddressbookDTO {
     @NotEmpty(message = "FullName Cannot Be Null")
     public String fullName;
 
-//    @Pattern(regexp = "^[A-Z]{1}[a-zA-Z\\s]{2,}$", message = "Invalid LastName")
-//    @NotEmpty(message = "LastName Cannot Be Null")
-//    public String lastName;
-
     @Pattern(regexp = "^[\\+]?[(]?[0-9]{3}[)]?[-\\s\\.]?[0-9]{3}[-\\s\\.]?[0-9]{4,6}$",message = "Invalid Phone Number")
     @NotEmpty(message = "Phone Number Is Not Empty")
     public String phone;
@@ -35,11 +31,5 @@ public class AddressbookDTO {
     @Pattern(regexp = "^[0-9]{3}[\\\\s]*[0-9]{2,}$",message = "Invalid Zip Name")
     @NotEmpty(message = "Zip Code Must Not Be Null")
     public String zip;
-
-
-
-//    @Pattern(regexp = "^[a-z0-9]+@[a-z]+\\.[a-z]{2,3}$", message = "Invalid Email")
-//    @NotEmpty(message = "Email Should Not Be Empty")
-//    public String email;
 
 }
